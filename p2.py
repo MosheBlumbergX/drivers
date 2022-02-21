@@ -23,8 +23,5 @@ if __name__ == '__main__':
 	parser.add_option("-p", "--port", dest="port", type="int", default=80, help="PORT for server", metavar="PORT")
 	
 	(options, args) = parser.parse_args()
-	print 'options: %s, args: %s' % (options, args)
-	check = check_server(options.address, options.port)
-	print 'check_server returned %s' % check
-	
+	check = check_server(options.address, options.port)	
 	sys.exit(not check)
