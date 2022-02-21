@@ -7,7 +7,7 @@ import sys
 def check_server(address, port):
 	# Create a TCP socket
 	s = socket.socket()
-	print "Attempting to connect to %s on port %s" % (address, port)
+	#print "Attempting to connect to %s on port  % (address, port)
 	try:
 		s.connect((address, port))
 		print "Connected to %s on port %s" % (address, port)
